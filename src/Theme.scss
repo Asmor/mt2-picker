@@ -1,0 +1,40 @@
+:root,
+.force-dark-mode {
+  // Dark mode (default)
+  --background: #1e1e1e;
+  --panel-fill: #2c2c2c;
+  --foreground: #efefef;
+  --green: #76c043;
+  --yellow: #e0a800;
+  --red: #c82333;
+
+  // Inverts node in dark mode, e.g. to make black icons white
+  --invert-dark-filter: invert();
+}
+
+@mixin light-mode {
+  --background: #f3f2f0;
+  --panel-fill: #fff9e6;
+  --foreground: #222222;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+
+  --invert-dark-filter: none;
+}
+
+.force-light-mode {
+  @include light-mode;
+}
+
+@media (prefers-color-scheme: light) {
+  // Light mode
+  :root {
+    @include light-mode;
+  }
+}
+
+:root {
+  --foreground-invert: var(--background);
+  --neutral: #777;
+}

@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    image: RENAME-ME
+    container_name: RENAME-ME
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    tty: true
+    command: bash -c "cd /workspace && npm install && npm run dev"
+    ports:
+      - "5173:5173"
