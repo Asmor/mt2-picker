@@ -2,8 +2,8 @@ version: "3.8"
 services:
   app:
     build: .
-    image: RENAME-ME
-    container_name: RENAME-ME
+    image: mt2-picker
+    container_name: mt2-picker
     working_dir: /workspace
     volumes:
       - .:/workspace

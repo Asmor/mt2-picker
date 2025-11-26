@@ -2,7 +2,7 @@
 
 Contributor: Ian Toltz (a.k.a. Asmor)
 
-Source Code: https://github.com/asmor/rename-me
+Source Code: https://github.com/asmor/mt2-picker
 
 ## Purpose
 
