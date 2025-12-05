@@ -71,7 +71,6 @@ const Picker = ({ primaryClanDef }: PickerProps) => {
   const completeCount = Object.values(progress).filter(
     (complete) => complete
   ).length;
-  console.log("xxy", { clan: primaryClanDef.name, completeCount, progress });
 
   return (
     <PickerGrid>

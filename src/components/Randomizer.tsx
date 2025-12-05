@@ -44,32 +44,11 @@ const Randomizer = () => {
     const primaryClan = clanDefs[chosen[0]];
     const secondaryClan = clanDefs[chosen[1]];
 
-    // const comboIsMissing = !missing.some(([p, s]) => {
-    //   const primaryMatches = p === primaryClan.clan;
-    //   const secMatches = s === secondaryClan.clan;
-
-    //   const retVal = primaryMatches && secMatches;
-    //   console.log("xxy", {
-    //     retVal,
-    //     priClan: primaryClan.clan,
-    //     secClan: secondaryClan.clan,
-    //     primaryMatches,
-    //     secMatches,
-    //     p,
-    //     s,
-    //   });
-    // });
     const comboIsMissing = missing.some(
       ([p, s]) => p === primaryClan.clan && s === secondaryClan.clan
     );
 
     const text = comboIsMissing ? "Mark complete" : "Undo";
-    console.log(
-      "xxy evaluating markButton",
-      { comboIsMissing },
-      missing.length,
-      missing
-    );
 
     return (
       <MarkButton
