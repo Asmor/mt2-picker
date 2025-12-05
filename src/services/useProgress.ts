@@ -1,6 +1,6 @@
 import { atom, useAtom } from "jotai";
-import { Clan, clans, type ClanDef } from "../util/data";
-import { type TotalProgress, type ClanProgress } from "../util/types";
+import { Clan, clans } from "../util/data";
+import { type TotalProgress } from "../util/types";
 import { useCallback, useEffect, useMemo } from "react";
 import storage from "../util/storage/storage";
 import _ from "lodash";
